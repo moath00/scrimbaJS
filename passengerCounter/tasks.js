@@ -48,3 +48,13 @@
 // doneLap();
 
 // console.log(lapsCompleted);
+
+// Seventh task
+// create a user
+let user = "moath";
+// create variable messeage
+let message = "You have three new notifications";
+// create user massage
+let messageToUser = message + ", " + user + "!";
+
+console.log(messageToUser);

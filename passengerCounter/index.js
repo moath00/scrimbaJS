@@ -1,7 +1,7 @@
 // initialize the counter with 0
 let number = 0;
 // get the html counter element
-let counterElement = document.getElementById('counter');
+let counterElement = document.getElementById('count');
 
 // function: increse the counter interacting with the increment botton
 let increse = () => {
