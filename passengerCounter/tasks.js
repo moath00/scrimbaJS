@@ -61,9 +61,25 @@
 
 // Eighth task
 // create a name variable
-let name = "moath";
+// let name = "moath";
 // create a message variable
-let message = "Hello, my name is ";
+// let message = "Hello, my name is ";
 // create greeting
-let myGreeting = message + ", " + name + "!";
-console.log(myGreeting);
+// let myGreeting = message + ", " + name + "!";
+// console.log(myGreeting);
+
+// Ninth task
+// create greeting
+let myName = "Moath";
+let greetingMessage = "Hello, welcome mr ";
+let greeting = greetingMessage + myName + "!";
+
+// create display of paragragh element
+let welcomeElement = document.getElementById("welcomeElement");
+
+let greet = () => {
+    greeting = greeting + " 👋";
+    welcomeElement.innerHTML = greeting;
+}
+
+greet();

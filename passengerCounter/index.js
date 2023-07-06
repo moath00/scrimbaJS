@@ -2,15 +2,28 @@
 let number = 0;
 // get the html counter element
 let counterElement = document.getElementById('count');
+// get the html save element
+let saveElement = document.getElementById('save-dis');
 
 // function: increse the counter interacting with the increment botton
 let increse = () => {
-    number = number + 1;
+    number += 1;
     counterElement.innerHTML = number;
 };
 
 // function: logs the counter
 let save = () => {
-    console.log(number);
+    if (saveElement.innerText === 'Previouse entered :') {
+        saveElement.innerText += ' ' + number;
+    } else {
+        saveElement.innerText += ' - ' + number;
+    }
+    reset();
 };
 
+
+// function: reset the counter to zero
+let reset = () => {
+    number = 0;
+    counterElement.innerHTML = number;
+};
