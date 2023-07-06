@@ -7,18 +7,15 @@ body {
 }
 
 h1 {
-    color: white;
     margin-top: 10px;
     margin-bottom: 10px;
-    text-shadow: 1.5px 1.5px 4px black;
+    font-size: 24px !important;
 }
 
 h2 {
-    color: white;
-    font-size: 50px;
+    font-size: 50px !important;
     margin-top: 0;
     margin-bottom: 20px;
-    text-shadow: 1.5px 1.5px 4px black;
 }
 
 button {
@@ -27,15 +24,33 @@ button {
     padding-bottom: 10px;
     color: white;
     font-weight: bold;
-    width: 200px;
+    width: 160px;
     margin-bottom: 5px;
     border-radius: 5px;
 }
 
 #increment-btn {
-    background: darkred;
+    background: linear-gradient(#ee1111, #550000);
+    border: 2px solid #ad391c;
+    font-size: 16px;
 }
 
 #save-btn {
-    background: darkgreen;
+    background: linear-gradient(#11ee11, #005500);
+    border: 2px solid #26aa26;
+    font-size: 16px;
+}
+
+.lighty {
+    color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px black;
+}
+
+.container {
+    margin: auto;
+    margin-top: 10vh;
+    background-color: #aaaa;
+    padding: 5vh;
+    max-width: max-content;
 }
