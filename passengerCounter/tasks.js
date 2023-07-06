@@ -50,11 +50,20 @@
 // console.log(lapsCompleted);
 
 // Seventh task
-// create a user
-let user = "moath";
+// create a user variable
+// let user = "moath";
 // create variable messeage
-let message = "You have three new notifications";
+// let message = "You have three new notifications";
 // create user massage
-let messageToUser = message + ", " + user + "!";
+// let messageToUser = message + ", " + user + "!";
 
-console.log(messageToUser);
+// console.log(messageToUser);
+
+// Eighth task
+// create a name variable
+let name = "moath";
+// create a message variable
+let message = "Hello, my name is ";
+// create greeting
+let myGreeting = message + ", " + name + "!";
+console.log(myGreeting);
