@@ -4,6 +4,8 @@
 // let myAge = 23;
 // console.log(myAge);
 
+// ##################### ******** ##################### //
+
 // Second task
 // humanDogRation variable
 
@@ -11,6 +13,8 @@
 // myDogAge calculate
 // let myDogAge = myAge * humanDogRation;
 // console.log(myDogAge);
+
+// ##################### ******** ##################### //
 
 // Third task
 // initialize the bonusPoints with 50
@@ -23,10 +27,14 @@
 // bonusPoints = bonusPoints + 45;
 // console.log(bonusPoints);
 
+// ##################### ******** ##################### //
+
 // Fourth task
 // function prints 42
 // let print42 = () => console.log(42);
 // print42();
+
+// ##################### ******** ##################### //
 
 // Fifth task
 // log the sum of laps time
@@ -36,6 +44,8 @@
 
 // let timeSum = () => console.log(lap1 + lap2 + lap3);
 // timeSum();
+
+// ##################### ******** ##################### //
 
 // Sixth task
 // count the laps done
@@ -49,6 +59,8 @@
 
 // console.log(lapsCompleted);
 
+// ##################### ******** ##################### //
+
 // Seventh task
 // create a user variable
 // let user = "moath";
@@ -59,6 +71,8 @@
 
 // console.log(messageToUser);
 
+// ##################### ******** ##################### //
+
 // Eighth task
 // create a name variable
 // let name = "moath";
@@ -68,18 +82,78 @@
 // let myGreeting = message + ", " + name + "!";
 // console.log(myGreeting);
 
+// ##################### ******** ##################### //
+
 // Ninth task
 // create greeting
-let myName = "Moath";
-let greetingMessage = "Hello, welcome mr ";
-let greeting = greetingMessage + myName + "!";
+// let myName = "Moath";
+// let greetingMessage = "Hello, welcome mr ";
+// let greeting = greetingMessage + myName + "!";
 
 // create display of paragragh element
-let welcomeElement = document.getElementById("welcomeElement");
+// let welcomeElement = document.getElementById("welcomeElement");
 
-let greet = () => {
-    greeting = greeting + " 👋";
-    welcomeElement.innerHTML = greeting;
-}
+// let greet = () => {
+//     greeting = greeting + " 👋";
+//     welcomeElement.innerHTML = greeting;
+// }
 
-greet();
+// greet();
+
+// ##################### ******** ##################### //
+
+// Tenth task
+// log my name
+// let firstName = "Moath";
+// let secondName = "Hjjawi";
+// let fullName = firstName + " " + secondName;
+
+// console.log(fullName);
+
+// ##################### ******** ##################### //
+
+// Eleventh task
+// create function greeting Linda
+// let name = "Linda";
+// let greetingMessage = "Hi there";
+
+// function greeting
+// let greeting = () => console.log(greetingMessage + ", " + name + "!");
+// calling function
+// greeting();
+
+// ##################### ******** ##################### //
+
+// Twelfth task
+// create functions add/remove points
+// let myPoints = 3;
+
+// function add3Points
+// function add3Points() {
+//     myPoints += 3;
+// };
+
+// function remove1Point
+// function remove1Point() {
+//     myPoints -= 1;
+// };
+
+// calling functions
+// add3Points();
+// add3Points();
+// remove1Point();
+// remove1Point();
+// add3Points();
+
+// log the result
+// console.log(myPoints);
+
+// ##################### ******** ##################### //
+
+// Try to predict what each of the lines will log out
+console.log("2" + 2) // "22"
+console.log(11 + 7) // 18
+console.log(6 + "5") // "65"
+console.log("My points: " + 5 + 9) // "My points: 59"
+console.log(2 + 2) // 4
+console.log("11" + "14") // 1114
