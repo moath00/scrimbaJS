@@ -1,7 +1,9 @@
 // create a message variable and assign it depending on check status
-let firstCard = Math.round(Math.random()*9)+2;
-let secondCard = Math.round(Math.random()*9)+2;
+let firstCard = getRandomCard();
+let secondCard = getRandomCard();
 
+// create cards array
+let cards = [firstCard, secondCard];
 // Create a variable to hold the total sum
 let sum = firstCard + secondCard;
 // create a variable to check the cash flow to the winner
@@ -20,6 +22,12 @@ let cardsElement = document.querySelector("#cards-el");
 // function: run the game
 let startGame = () => renderGame();
 
+// function: generate a random number
+// we write it with function keyword for hoisting purposes in line 2 and 3
+function getRandomCard() {
+    return Math.floor(Math.random() *  13) + 1;
+};
+
 // function: start the game and check winning
 let renderGame = () => {
     if (sum < 21)
@@ -32,13 +40,16 @@ let renderGame = () => {
         isAlive = false;
     };
     messageElement.textContent = message;
-    cardsElement.textContent = "Cards: " + firstCard + ", " + secondCard;
+    cardsElement.textContent = "Cards: ";
+    for (let i = 0; i < cards.length; i++)
+        cardsElement.textContent += " " + cards[i];
     sumElement.textContent = "Sum: " + sum;
 };
 
 // function: create new card
 let newCard = () => {
-    let card = Math.round(Math.random() * 9) + 2;
+    let card = getRandomCard();
+    cards.push(card);
     sum += card;
     renderGame();
 };

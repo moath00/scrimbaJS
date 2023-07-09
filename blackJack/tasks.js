@@ -148,9 +148,108 @@
 
 // Tenth task
 // log the array given
-let experience = ["CEO at Scrimba", "Frontend developer at Xeneta", "People counter for Norstat"]
+// let experience = ["CEO at Scrimba", "Frontend developer at Xeneta", "People counter for Norstat"]
 
-// Make the following appear in the console:
-console.log(experience[1]); // Frontend developer at Xeneta
-console.log(experience[2]); // People counter for Norstat
-console.log(experience[0]); // CEO at Scrimba
+// // Make the following appear in the console:
+// console.log(experience[1]); // Frontend developer at Xeneta
+// console.log(experience[2]); // People counter for Norstat
+// console.log(experience[0]); // CEO at Scrimba
+
+
+// #################### ***** #################### //
+
+
+// Eleventh task
+// create an array described me
+// let me = ["Moath Hjjawi", 23, true];
+
+
+// #################### ***** #################### //
+
+
+// Twelfth task
+// Push the newMessage to the messages array, and then log out the array
+// let messages = [
+//     "Hey, how's it going?",        
+//     "I'm great, thank you! How about you?",
+//     "All good. Been working on my portfolio lately."
+// ];
+
+// let newMessage = "Same here!";
+// messages.push(newMessage);
+
+// console.log(messages);
+
+// remove the last message from the massages array
+// messages.pop();
+// console.log(messages);
+
+
+// #################### ***** #################### //
+
+
+// Thirteenth task
+// for loop to count from 10 to 21
+// for (let count = 10; count < 21; count++)
+//     console.log(count);
+
+
+// #################### ***** #################### //
+
+
+// Fourteenth task
+// for loop to count from 10 to 100
+// for (let i = 10; i <= 100; i += 10)
+//     console.log(i);
+
+
+// #################### ***** #################### //
+
+
+// Fifteenth task
+// log the cards array
+// let cards = [7, 3, 9];
+
+// for (let i = 0; i < cards.length; i++)
+//     console.log(cards[i]);
+
+
+// #################### ***** #################### //
+
+
+// Sixteenth task
+// let sentence = ["Hello", "my", "name", "is", "Per"];
+// let greetingEl = document.getElementById("greeting-el");
+
+// for (let i = 0; i < sentence.length; i++)
+//     greetingEl.textContent += sentence[i] + " ";
+
+
+// #################### ***** #################### //
+
+
+// Seventeenth task
+// create a function to sum total race time
+// let player1Time = 102;
+// let player2Time = 107;
+
+// let getTotalTime = () => player1Time + player2Time;
+
+// let totalRaceTime = getTotalTime();
+// console.log(totalRaceTime);
+
+
+// #################### ***** #################### //
+
+
+// Eighteenth task
+// create a function roll dice
+// let rollDice = () => Math.floor(Math.random() * 6) + 1;
+
+// console.log(rollDice());
+
+
+// #################### ***** #################### //
+
+
+// Nineteenth task
