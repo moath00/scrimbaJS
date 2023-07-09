@@ -1,15 +1,16 @@
-// create a message variable and assign it depending on check status
-let firstCard = getRandomCard();
-let secondCard = getRandomCard();
-
+// crate player object
+let player = {
+    name: "Loo",
+    chips: 125
+};
 // create cards array
-let cards = [firstCard, secondCard];
+let cards = [];
 // Create a variable to hold the total sum
-let sum = firstCard + secondCard;
+let sum = 0;
 // create a variable to check the cash flow to the winner
 let blackjackCash = false;
 // create a variable to check the if player style in game
-let isAlive = true;
+let isAlive = false;
 // create a message variable
 let message = "";
 // create a variable to store the message element
@@ -18,14 +19,31 @@ let messageElement = document.getElementById("message-el");
 let sumElement = document.querySelector("#sum-el");
 // create a variable to store the cards element
 let cardsElement = document.querySelector("#cards-el");
+// create a variable to store the chips element
+let playerElement = document.querySelector("#player-el");
+playerElement.textContent = player.name + ": $" + player.chips;
 
 // function: run the game
-let startGame = () => renderGame();
+let startGame = () => {
+    // create a message variable and assign it depending on check status
+    let firstCard = getRandomCard();
+    let secondCard = getRandomCard();
+    cards.push(firstCard);
+    cards.push(secondCard);
+    sum = firstCard + secondCard;
+    isAlive = true;
+    renderGame();
+};
 
 // function: generate a random number
 // we write it with function keyword for hoisting purposes in line 2 and 3
 function getRandomCard() {
-    return Math.floor(Math.random() *  13) + 1;
+    let randomNumber = Math.floor(Math.random() *  13) + 1;
+    if (randomNumber === 1)
+        return 11;
+    else if (randomNumber > 10)
+        return 10;
+    return randomNumber;
 };
 
 // function: start the game and check winning
@@ -48,8 +66,10 @@ let renderGame = () => {
 
 // function: create new card
 let newCard = () => {
-    let card = getRandomCard();
-    cards.push(card);
-    sum += card;
-    renderGame();
+    if ( isAlive && !blackjackCash ) {
+        let card = getRandomCard();
+        cards.push(card);
+        sum += card;
+        renderGame();
+    }
 };

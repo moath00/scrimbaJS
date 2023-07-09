@@ -253,3 +253,54 @@
 
 
 // Nineteenth task
+// create check statement (&& check)
+
+// let hasSolvedChallenge = false;
+// let hasHintsLeft = false;
+
+// if (!hasSolvedChallenge && !hasHintsLeft) {
+//     showSolution();
+// }
+
+// function showSolution() {
+//     console.log("Showing the solution....");
+// }
+
+
+// #################### ***** #################### //
+
+
+// Twelfth task
+// create check statement (|| check)
+// let likesDocumentaries = true;
+// let likesStartup = false;
+
+// if (likesDocumentaries || likesStartup) {
+//     recommendMovie();
+// }
+
+// function recommendMovie() {
+//     console.log("Hey, check out this new film we think you will like!")
+// }
+
+
+// #################### ***** #################### //
+
+
+// Thirteenth task
+// create object of wish list
+// let wishList = {
+//     name: "Mount Castle",
+//     isVisited : false,
+//     price: 100,
+//     parts : ["North view", "East view", "Tower view"]
+// };
+
+// console.log(wishList.name);
+// console.log(wishList.parts);
+
+
+// #################### ***** #################### //
+
+
+// Fourteenth task
