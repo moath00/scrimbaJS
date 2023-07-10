@@ -22,9 +22,6 @@ let render = (leads) => {
 };
 
 let myLeads = [];
-const tabs = [
-    {url: "https://www.linkedin.com/in/per-harald-borgen/"}
-];
 let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
 
 if (leadsFromLocalStorage) {
@@ -42,9 +39,11 @@ saveElement.addEventListener("click", () => {
 });
 
 tabSaveElement.addEventListener("click", () => {
-    myLeads.unshift(inputElement.value);
-    localStorage.setItem("myLeads", JSON.stringify(myLeads));
-    render(myLeads);
+    chrome.tabs.query({active: true, currentWindow: true}, (tabs) => {
+        myLeads.unshift(tabs[0].url);
+        localStorage.setItem("myLeads", JSON.stringify(myLeads));
+        render(myLeads);
+    });
 });
 
 deleteElement.addEventListener("dblclick", () => {
