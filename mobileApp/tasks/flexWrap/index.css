@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.thumbnails {
+    display: flex;
+    /* \/ \/ wrapping the flex elements */
+    flex-wrap: wrap;
+    max-width: 580px;
+    margin: 50px auto;
+    /* \/ \/ make gap instead of margin */
+    gap: 20px;
+}
+
+a {
+    display: block;
+}
+
+.thumbnail {
+    width: 180px;
+    border-radius: 5px;
+}
+
+img {
+    display: block;
+}
